@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PhoneWords.MainPage"
+             Shell.NavBarIsVisible="False"
+             >
+
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="18">
+
+            <!-- TITULO -->
+            <Label 
+                   x:Name="TitleLabel"
+                   
+                   CharacterSpacing="2"
+                   FontSize="40"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center"
+                   TextColor="DarkViolet"/>
+
+
+            <!-- PANTALLA DE CONFIGURACIÓN (jugador 1 ingresa la palabra) -->
+            <VerticalStackLayout x:Name="SetupPanel" Spacing="12">
+                <Label Text="Ingresá la palabra:" FontAttributes="Bold" FontSize="18" />
+                <Entry x:Name="SecretEntry"
+                       Placeholder="Palabra secreta (se ocultará)"
+                       IsPassword="True"
+                       Completed="OnStartClicked" />
+                <Button Text="Iniciar partida" Clicked="OnStartClicked" BackgroundColor="DarkViolet" TextColor="White" FontAttributes="Bold" />
+                <Label x:Name="SetupMessage" TextColor="Red" IsVisible="False" />
+            </VerticalStackLayout>
+
+            <!-- PANTALLA DE JUEGO (jugador 2 prueba letras) -->
+            <VerticalStackLayout x:Name="GamePanel" IsVisible="False" Spacing="12">
+                <Label Text="Adiviná la palabra:" FontAttributes="Bold" FontSize="18" />
+                <Label x:Name="WordDisplay" FontSize="36" HorizontalTextAlignment="Center" />
+
+                <!-- Entrada para letra -->
+                <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                    <Entry x:Name="GuessEntry"
+                           Placeholder="Ingresa una letra"
+                           MaxLength="1"
+                           WidthRequest="120"
+                           Completed="OnGuessSubmitted" />
+                    <Button Text="Probar" Clicked="OnGuessClicked"  BackgroundColor="DarkViolet" TextColor="White" FontAttributes="Bold"/>
+                </HorizontalStackLayout>
+
+                <!-- Vidas como corazones -->
+                <Label x:Name="LivesLabel" FontSize="28" HorizontalTextAlignment="Center" />
+
+                <Label x:Name="GuessedLabel" FontSize="14" />
+                <Label x:Name="ResultLabel" FontSize="16" TextColor="Green" IsVisible="False" />
+
+                <HorizontalStackLayout Spacing="12">
+                    <Button Text="Reiniciar" Clicked="OnResetClicked" BackgroundColor="DarkViolet" TextColor="White" FontAttributes="Bold" />
+                    <Button Text="Volver a cambiar palabra" Clicked="OnResetToSetupClicked" BackgroundColor="DarkViolet" TextColor="White" FontAttributes="Bold"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            <!-- FOOTER: desarrolladores -->
+            <VerticalStackLayout x:Name="FooterPanel" Opacity="1" Spacing="2" Padding="8,80,8,8" HorizontalOptions="Center">
+                <Label Text="Desarrollado por:" TextColor="DarkViolet" FontAttributes="Bold" FontSize="14" HorizontalOptions="Center" Padding="0,0,0,5" />
+
+                <Label Text="Lucía Victoria Alvarez" FontSize="14" HorizontalOptions="Center" />
+                <Label Text="Gorosito Florencia Agostina" FontSize="14" HorizontalOptions="Center" />
+                <Label Text="Agustín Tardella" FontSize="14" HorizontalOptions="Center" />
+                <Label Text="Enzo Santino Viltes" FontSize="14" HorizontalOptions="Center" />
+                <Label Text="Alejo Tiago Vivas" FontSize="14" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
