@@ -67,8 +67,8 @@ Antes de instalar la app, es necesario confiar en el certificado de firma:
 
 ## 👤 Autores
 
-**Agustín Tardella** — [@agustint96](https://github.com/agustint96)
-**Lucía Victoria Alvarez**
-**Gorosito Florencia Agostina**
-**Enzo Santino Viltes**
+**Agustín Tardella**  
+**Lucía Victoria Alvarez**  
+**Gorosito Florencia Agostina**  
+**Enzo Santino Viltes**  
 **Alejo Tiago Vivas**
