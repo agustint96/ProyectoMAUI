@@ -46,7 +46,7 @@ Antes de instalar la app, es necesario confiar en el certificado de firma:
 
 ### 5. Ejecutar el instalador
 
-1. Doble clic en el archivo .MSIX
+1. Doble clic en el archivo .MSIX `AhorcadoProyecto_0.0.1.0_x64.msix`
 2. Instalar
 3. Una vez instalada, la app aparecerá en el menú de inicio de Windows con el nombre AhorcadoProyecto 
 
