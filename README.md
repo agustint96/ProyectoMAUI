@@ -1,10 +1,10 @@
-# 🎮 HangMan - Juego del Ahorcado
+# 🔠 Proyecto en .NET MAUI - Juego del Ahorcado
 
 Implementación clásica del juego del Ahorcado desarrollada con **.NET MAUI** para Windows, como trabajo práctico de prueba de interfaz gráfica en la carrera **Analista Universitario de Sistemas Informáticos**.
 
 ---
 
-## 📋 Descripción
+## ✍️ Descripción
 
 El juego consiste en adivinar una palabra oculta letra por letra. El jugador tiene un número limitado de intentos fallidos antes de perder.
 
@@ -17,7 +17,7 @@ El juego consiste en adivinar una palabra oculta letra por letra. El jugador tie
 
 ---
 
-## 📥 Instalación paso a paso
+## 🧩 Instalación paso a paso
 
 ### 1. Ir a la sección Releases
 
@@ -26,6 +26,8 @@ En la página principal del repositorio, hacé clic en **Releases** en el panel 
 ### 2. Descargar el ZIP
 
 Dentro del release más reciente, desplegá **Assets** y descargá el archivo `.zip`.
+(AhorcadoProyecto_0.0.1.0_Test.zip)
+
 
 ### 3. Descomprimir
 
@@ -44,19 +46,13 @@ Antes de instalar la app, es necesario confiar en el certificado de firma:
 
 ### 5. Ejecutar el instalador
 
-1. Abrí **PowerShell como administrador**
-2. Navegá hasta la carpeta descomprimida
-3. Ejecutá el siguiente comando:
-
-```powershell
-.\Install.ps1
-```
-
-4. Una vez instalada, la app aparecerá en el menú de inicio de Windows
+1. Doble clic en el archivo .MSIX
+2. Instalar
+3. Una vez instalada, la app aparecerá en el menú de inicio de Windows con el nombre AhorcadoProyecto 
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## 🤖 Tecnologías utilizadas
 
 - [.NET MAUI](https://learn.microsoft.com/es-es/dotnet/maui/)
 - C#
@@ -65,7 +61,7 @@ Antes de instalar la app, es necesario confiar en el certificado de firma:
 
 ---
 
-## 👤 Autores
+## 👥 Desarrolladores
 
 **Agustín Tardella**  
 **Lucía Victoria Alvarez**  
